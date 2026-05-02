@@ -510,6 +510,17 @@ body {
   filter: brightness(0.88);
 }
 
+.btn-install-app:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.install-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
 .btn-install-cancel {
   flex: 1;
   min-height: 42px;

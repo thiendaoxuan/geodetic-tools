@@ -40,10 +40,6 @@ export default function InstallButton() {
     setShowPopup(true)
   }, [])
 
-  const visible = ios || installPrompt
-
-  if (!visible) return null
-
   return (
     <>
       <button
@@ -93,8 +89,13 @@ export default function InstallButton() {
                   Get quick access to your GPS coordinates in three formats.
                   Works offline after first use — no internet needed.
                 </p>
+                {!installPrompt && (
+                  <p className="install-note">Waiting for install prompt... refresh if this persists.</p>
+                )}
                 <div className="install-actions">
-                  <button className="btn-install-app" onClick={handleInstall}>Install</button>
+                  <button className="btn-install-app" onClick={handleInstall} disabled={!installPrompt}>
+                    {installPrompt ? 'Install' : 'Not ready'}
+                  </button>
                   <button className="btn-install-cancel" onClick={() => setShowPopup(false)}>Cancel</button>
                 </div>
               </>
