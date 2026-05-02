@@ -41,10 +41,6 @@ body {
   margin-bottom: 0;
 }
 
-.header-row > div {
-  width: 32px;
-}
-
 .title {
   font-size: 1.75rem;
   font-weight: 700;
