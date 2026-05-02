@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+# planning docs
+.planning/
+
+# agent config
+.codex/
+.opencode/
+.claude/
+.codebuddy/
+.cursor/
+.aider/
