@@ -3,7 +3,7 @@ const CACHE = '__CACHE__'
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open(CACHE).then((cache) =>
-      cache.addAll(['/geodetic-tools/'])
+      cache.addAll(__PRECACHE__)
     )
   )
   self.skipWaiting()
