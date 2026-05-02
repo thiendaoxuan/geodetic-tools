@@ -61,7 +61,7 @@ export default function InstallButton() {
       </button>
 
       {showGuide && (
-        <div className="settings-backdrop" onClick={() => setShowGuide(false)}>
+        <div className="install-backdrop" onClick={() => setShowGuide(false)}>
           <div className="install-guide" onClick={(e) => e.stopPropagation()}>
             <div className="settings-heading">
               <span>Add to Home Screen</span>
