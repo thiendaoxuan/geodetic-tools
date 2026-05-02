@@ -480,6 +480,60 @@ body {
   filter: brightness(0.88);
 }
 
+/* ── Desktop Install Popup ── */
+
+.install-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+.install-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-install-app {
+  flex: 1;
+  min-height: 42px;
+  padding: 10px 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: filter 0.15s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-install-app:hover {
+  filter: brightness(0.88);
+}
+
+.btn-install-cancel {
+  flex: 1;
+  min-height: 42px;
+  padding: 10px 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-install-cancel:hover {
+  background: var(--btn-bg-hover);
+}
+
 /* ── Mobile tweaks ── */
 
 @media (max-width: 380px) {
