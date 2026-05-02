@@ -1,4 +1,4 @@
-const CACHE = 'geodetic-v1'
+const CACHE = 'geodetic-v2'
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
