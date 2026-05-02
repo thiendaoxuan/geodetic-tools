@@ -59,6 +59,28 @@ body {
   margin: 4px 0 28px;
 }
 
+/* ── Install Button ── */
+
+.btn-install {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--accent);
+  cursor: pointer;
+  transition: background 0.15s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-install:hover {
+  background: var(--btn-bg-hover);
+}
+
 /* ── Buttons ── */
 
 .btn-settings {
@@ -396,6 +418,58 @@ body {
   color: #3e2723;
 }
 
+/* ── iOS Install Guide ── */
+
+.install-guide {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 28px;
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+.install-steps {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.install-steps li {
+  margin-bottom: 10px;
+}
+
+.step-icon {
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 0 4px;
+  color: var(--accent);
+}
+
+.btn-guide-ok {
+  display: block;
+  width: 100%;
+  min-height: 42px;
+  padding: 10px 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: filter 0.15s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-guide-ok:hover {
+  filter: brightness(0.88);
+}
+
 /* ── Mobile tweaks ── */
 
 @media (max-width: 380px) {
@@ -466,6 +540,11 @@ body {
 
   .settings-themes {
     justify-content: flex-start;
+  }
+
+  .install-guide {
+    width: calc(100vw - 28px);
+    padding: 22px;
   }
 }
 

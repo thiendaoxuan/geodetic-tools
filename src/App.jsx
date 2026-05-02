@@ -4,6 +4,7 @@ import LocationButton from './components/LocationButton'
 import CoordinateRow from './components/CoordinateRow'
 import StatusMessage from './components/StatusMessage'
 import SettingsPanel from './components/SettingsPanel'
+import InstallButton from './components/InstallButton'
 
 const STATE = { IDLE: 'idle', LOADING: 'loading', SUCCESS: 'success', ERROR: 'error' }
 
@@ -138,7 +139,7 @@ export default function App() {
   return (
     <main className="app">
       <div className="header-row">
-        <div />
+        <InstallButton />
         <h1 className="title">Geodetic Tool</h1>
         <button
           className="btn-settings"
